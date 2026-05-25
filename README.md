@@ -69,3 +69,83 @@ Enterprise-AI-Assistant/
 │   └── utils/
 │
 └── notebooks/
+
+
+⚙️ How the System Works
+1️⃣ Document Ingestion
+
+PDF files placed inside:
+
+data/raw/
+
+are automatically:
+
+loaded
+parsed
+chunked
+embedded
+stored in ChromaDB
+2️⃣ Semantic Retrieval
+
+User queries are converted into vector embeddings and matched against stored document embeddings using semantic similarity search.
+
+3️⃣ Grounded Generation
+
+Relevant retrieved chunks are passed to Gemini to generate grounded responses strictly based on retrieved context.
+
+4️⃣ Hallucination Prevention
+
+Similarity threshold filtering is used to prevent the LLM from generating responses when relevant context is unavailable.
+
+🔑 Key Engineering Features
+💾 Persistent Vector Database
+
+Embeddings are stored locally using:
+
+chromadb.PersistentClient()
+
+allowing persistence across application restarts.
+
+🚫 Duplicate Prevention
+
+Already processed files are tracked using:
+
+data/processed/processed_files.txt
+
+to avoid duplicate embeddings.
+
+🛡 Retrieval Confidence Filtering
+
+Similarity thresholds validate retrieval quality before passing context to the LLM.
+
+This reduces hallucinations and improves enterprise reliability.
+
+🎯 Example Use Cases
+Enterprise knowledge assistants
+Internal documentation copilots
+Engineering knowledge retrieval
+AI-powered document search
+Research assistants
+Technical knowledge systems
+🔮 Future Improvements
+Multi-document chat history
+FastAPI deployment
+Authentication and access control
+Advanced reranking
+Metadata filtering
+Cloud deployment
+Multi-user support
+📚 Learning Outcomes
+
+This project demonstrates practical implementation of:
+
+Retrieval-Augmented Generation (RAG)
+LLM orchestration
+Vector databases
+Embedding pipelines
+Semantic search
+Grounded AI systems
+Hallucination prevention
+Enterprise AI workflows
+Modular AI application architecture
+
