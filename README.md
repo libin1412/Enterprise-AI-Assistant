@@ -71,6 +71,7 @@ Enterprise-AI-Assistant/
 └── notebooks/
  
 # ⚙️ How the System Works
+
 1️⃣ Document Ingestion
 
 PDF files placed inside:
@@ -97,6 +98,7 @@ Relevant retrieved chunks are passed to Gemini to generate grounded responses st
 Similarity threshold filtering is used to prevent the LLM from generating responses when relevant context is unavailable.
 
 # 🔑 Key Engineering Features
+
 # 💾 Persistent Vector Database
 
 Embeddings are stored locally using:
@@ -120,6 +122,7 @@ Similarity thresholds validate retrieval quality before passing context to the L
 This reduces hallucinations and improves enterprise reliability.
 
 # 🎯 Example Use Cases
+
 Enterprise knowledge assistants
 Internal documentation copilots
 Engineering knowledge retrieval
@@ -128,6 +131,7 @@ Research assistants
 Technical knowledge systems
 
 # 🔮 Future Improvements
+
 Multi-document chat history
 FastAPI deployment
 Authentication and access control
