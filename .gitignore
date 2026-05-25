@@ -2,4 +2,6 @@
 __pycache__/
 .env
 chromadb/
+chroma_db/
+processed_data/
 *.pyc
