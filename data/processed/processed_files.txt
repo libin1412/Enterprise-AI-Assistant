@@ -1,0 +1,6 @@
+multi gpu approach_rolls_royce.pdf
+predictive_crash_analytics_paper.pdf
+review ofGNN.pdf
+surrogate_model for rapid pred of crashworthiness.pdf
+train crashworthiness.pdf
+what is calibration.pdf

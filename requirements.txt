@@ -1,0 +1,10 @@
+streamlit
+google-generativeai
+pypdf
+langchain
+chromadb
+sentence-transformers
+faiss-cpu
+python-dotenv
+fastapi
+uvicorn
