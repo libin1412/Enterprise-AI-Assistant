@@ -1,5 +1,5 @@
-**Enterprise AI Knowledge Assistant
-**
+Enterprise AI Knowledge Assistant
+
 An enterprise-grade AI Knowledge Assistant built using Python, Streamlit, ChromaDB, Sentence Transformers, and Google Gemini API.
 
 The system enables users to ask questions against an internal document knowledge base using a Retrieval-Augmented Generation (RAG) pipeline with semantic search, vector embeddings, grounded LLM responses, and hallucination prevention mechanisms.
