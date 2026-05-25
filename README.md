@@ -69,8 +69,7 @@ Enterprise-AI-Assistant/
 │   └── utils/
 │
 └── notebooks/
-
-
+ 
 # ⚙️ How the System Works
 1️⃣ Document Ingestion
 
