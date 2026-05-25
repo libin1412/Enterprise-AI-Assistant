@@ -80,11 +80,12 @@ data/raw/
 
 are automatically:
 
-loaded
-parsed
-chunked
-embedded
-stored in ChromaDB
+- loaded
+- parsed
+- chunked
+- embedded
+- stored in ChromaDB
+
 2️⃣ Semantic Retrieval
 
 User queries are converted into vector embeddings and matched against stored document embeddings using semantic similarity search.
@@ -123,34 +124,34 @@ This reduces hallucinations and improves enterprise reliability.
 
 # 🎯 Example Use Cases
 
-Enterprise knowledge assistants
-Internal documentation copilots
-Engineering knowledge retrieval
-AI-powered document search
-Research assistants
-Technical knowledge systems
+- Enterprise knowledge assistants
+- Internal documentation copilots
+- Engineering knowledge retrieval
+- AI-powered document search
+- Research assistants
+- Technical knowledge systems
 
 # 🔮 Future Improvements
 
-Multi-document chat history
-FastAPI deployment
-Authentication and access control
-Advanced reranking
-Metadata filtering
-Cloud deployment
-Multi-user support
+- Multi-document chat history
+- FastAPI deployment
+- Authentication and access control
+- Advanced reranking
+- Metadata filtering
+- Cloud deployment
+- Multi-user support
 
 # 📚 Learning Outcomes
 
 This project demonstrates practical implementation of:
 
-Retrieval-Augmented Generation (RAG)
-LLM orchestration
-Vector databases
-Embedding pipelines
-Semantic search
-Grounded AI systems
-Hallucination prevention
-Enterprise AI workflows
-Modular AI application architecture
+- Retrieval-Augmented Generation (RAG)
+- LLM orchestration
+- Vector databases
+- Embedding pipelines
+- Semantic search
+- Grounded AI systems
+- Hallucination prevention
+- Enterprise AI workflows
+- Modular AI application architecture
 
