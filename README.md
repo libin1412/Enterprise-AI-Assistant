@@ -25,33 +25,7 @@ Google Gemini API
 PyPDF
 LangChain utilities
 
-Project Architecture
-Enterprise-AI-Assistant/
-│
-├── app.py
-├── main.py
-├── requirements.txt
-├── README.md
-├── .env
-│
-├── chroma_db/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── src/
-│   ├── components/
-│   │   ├── embeddings.py
-│   │   ├── llm_helper.py
-│   │   └── pdf_loader.py
-│   │
-│   ├── pipeline/
-│   │   └── rag_pipeline.py
-│   │
-│   └── utils/
-│
-└── notebooks/
+
 How the System Works
 1. Document Ingestion
 
