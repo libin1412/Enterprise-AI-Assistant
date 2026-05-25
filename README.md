@@ -70,13 +70,17 @@ Enterprise-AI-Assistant/
 │
 └── notebooks/
  
+---
+
 # ⚙️ How the System Works
 
-1️⃣ Document Ingestion
+## 1️⃣ Document Ingestion
 
 PDF files placed inside:
 
+```bash
 data/raw/
+```
 
 are automatically:
 
@@ -86,41 +90,59 @@ are automatically:
 - embedded
 - stored in ChromaDB
 
-2️⃣ Semantic Retrieval
+---
+
+## 2️⃣ Semantic Retrieval
 
 User queries are converted into vector embeddings and matched against stored document embeddings using semantic similarity search.
 
-3️⃣ Grounded Generation
+---
+
+## 3️⃣ Grounded Generation
 
 Relevant retrieved chunks are passed to Gemini to generate grounded responses strictly based on retrieved context.
 
-4️⃣ Hallucination Prevention
+---
+
+## 4️⃣ Hallucination Prevention
 
 Similarity threshold filtering is used to prevent the LLM from generating responses when relevant context is unavailable.
 
+---
+
 # 🔑 Key Engineering Features
 
-# 💾 Persistent Vector Database
+## 💾 Persistent Vector Database
 
 Embeddings are stored locally using:
 
+```python
 chromadb.PersistentClient()
+```
 
 allowing persistence across application restarts.
 
-# 🚫 Duplicate Prevention
+---
+
+## 🚫 Duplicate Prevention
 
 Already processed files are tracked using:
 
+```bash
 data/processed/processed_files.txt
+```
 
 to avoid duplicate embeddings.
 
-# 🛡 Retrieval Confidence Filtering
+---
+
+## 🛡 Retrieval Confidence Filtering
 
 Similarity thresholds validate retrieval quality before passing context to the LLM.
 
 This reduces hallucinations and improves enterprise reliability.
+
+---
 
 # 🎯 Example Use Cases
 
@@ -131,6 +153,8 @@ This reduces hallucinations and improves enterprise reliability.
 - Research assistants
 - Technical knowledge systems
 
+---
+
 # 🔮 Future Improvements
 
 - Multi-document chat history
@@ -140,6 +164,8 @@ This reduces hallucinations and improves enterprise reliability.
 - Metadata filtering
 - Cloud deployment
 - Multi-user support
+
+---
 
 # 📚 Learning Outcomes
 
@@ -154,4 +180,6 @@ This project demonstrates practical implementation of:
 - Hallucination prevention
 - Enterprise AI workflows
 - Modular AI application architecture
+
+---
 
